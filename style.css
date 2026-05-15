@@ -4,12 +4,18 @@
     box-sizing: border-box;
 }
 
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     height: 5000px;
     background-color: #0B1D26;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 .container {
@@ -17,6 +23,7 @@ body {
     max-width: 1462px;
     width: 100%;
     padding: 0 15px;
+    box-sizing: border-box;
 }
 
 .cards {
@@ -103,4 +110,61 @@ body {
     height: 16px;
     margin-left: 16px;
     fill: #FBD784;
+}
+
+@media (max-width: 768px) {
+    .cards__list__item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        min-height: 1000px;
+    }
+
+    .card__overlaynum {
+        font-size: 150px;
+        top: 50px;
+        left: 65%;
+    }
+
+    .card__img__reverse {
+        order: 1000 !important;
+    }
+
+    .card__textbox {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .card__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card__linewithtext {
+        font-size: 16px;
+    }
+
+    .card__line {
+        width: 48px;
+        margin-right: 16px;
+    }
+
+    .card__h3 {
+        font-size: 32px;
+    }
+
+    .card__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .card__textwitharrow {
+        font-size: 14px;
+    }
+
+    .card__arrow {
+        width: 16px;
+        height: 12px;
+        margin-left: 8px;
+    }
 }
