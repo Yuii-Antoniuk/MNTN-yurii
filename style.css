@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    height: 5000px;
+    background-color: #0B1D26;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1462px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.cards {
+    background-color: #0B1D26;
+}
+
+.cards__container {
+    min-height: 2560px;
+}
+
+.cards__list {
+    width: 100%;
+    min-height: 2560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cards__list__item {
+    width: 100%;
+    min-height: 720px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.card__overlaynum {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 240px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.card__textbox {
+    width: 896px;
+    height: 100%;
+    padding: 141px 114px 140px 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card__linewithtext {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    color: #FBD784;
+    font-weight: 800;
+}
+
+.card__line {
+    width: 72px;
+    margin-right: 24px;
+    border: #FBD784 solid 1px;
+}
+
+.card__h3 {
+    max-width: 555px;
+    width: 100%;
+    font-size: 64px;
+    color: white;
+}
+
+.card__text {
+    color: white;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.card__textwitharrow {
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #FBD784;
+    display: flex;
+    align-items: center;
+}
+
+.card__arrow {
+    width: 24px;
+    height: 16px;
+    margin-left: 16px;
+    fill: #FBD784;
+}
+
+@media (max-width: 768px) {
+    .cards__list__item {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        min-height: 1000px;
+    }
+
+    .card__overlaynum {
+        font-size: 150px;
+        top: 50px;
+        left: 65%;
+    }
+
+    .card__img__reverse {
+        order: 1000 !important;
+    }
+
+    .card__textbox {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .card__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card__linewithtext {
+        font-size: 16px;
+    }
+
+    .card__line {
+        width: 48px;
+        margin-right: 16px;
+    }
+
+    .card__h3 {
+        font-size: 32px;
+    }
+
+    .card__text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .card__textwitharrow {
+        font-size: 14px;
+    }
+
+    .card__arrow {
+        width: 16px;
+        height: 12px;
+        margin-left: 8px;
+    }
+}
